@@ -8,7 +8,7 @@
   <input type="text" name="pet[name]" id="pet_name">
   <%Owner.all.each do |owner| %>
       <input type="checkbox" name="pet[owner_id]" id="<%= owner.id%>" value="<%= owner.id%>"> <%= owner.name %></input>
-  <%end%>    
+  <%end%>
 
       <label>and/or, create a new owner:</label>
       <br></br>
