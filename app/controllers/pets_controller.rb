@@ -1,11 +1,12 @@
 class PetsController < ApplicationController
 
   get '/pets' do
-    @owner = Owner.all
+    @pets = Pet.all
     erb :'/pets/index'
   end
 
   get '/pets/new' do
+    @owner = Owner.all
     erb :'/pets/new'
   end
 
